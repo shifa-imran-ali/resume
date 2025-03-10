@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+ 
+}
+body{
+    background-color: rgb(216, 245, 255);
+    font-family: sans-serif;
+    height: 100vh;
+    line-height: 4vh;
+}
+header{
+    background-color: rgb(3, 17, 45);
+    text-align: center;
+    border: 2px solid black ;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px; 
+    color: white;    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;  
+    align-items: center;
+    padding: 2vh;
+}
+.head{
+    text-decoration: underline;
+    padding: 2vh;
+}
+.link{
+    color: rgb(96, 166, 213);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    
+}
+.header-align{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 75vw;
+}
+.logo{
+    width: 5vh;
+    height: 5vh ;
+}
+.hr{
+    background-color: #807d7d;
+    height: 1.5px;
+    width: 100%;
+}
+.section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+}
+.heading{
+    flex: 1;
+    padding: 5vh 4vh;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.detail{
+   flex: 9;
+   padding: 3vh 4vh;
+   font-size: 0.9em;
+
+}
+.vl{
+    height: inherit;
+    width: 1px;
+    background-color: #807d7d;
+    margin: 10px;
+}
+.sub-head{
+    color: rgb(5, 61, 98);
+    font-weight: bold;
+    font-size: 1rem;
+}
+span{
+    font-size: 0.9rem;
+}
+.repo-links{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+@media (max-width: 1024px) {
+    body{
+        width: 100vw;
+    }
+    .vl{
+        display: none;
+    }
+    header{
+        width: 100vw;
+    }
+    .header-align{
+        flex-direction: column;
+    }
+    .section{
+        flex-direction: column;
+    }
+    .repo-links{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    span{
+        display: block;
+    }
+}
+@media (max-width: 1280px) {
+    a{
+        font-size: 1rem;
+    }
+    .repo-links{
+        justify-content: space-between;
+    }
+}
